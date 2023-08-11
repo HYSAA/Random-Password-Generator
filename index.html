@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RandomPassword Generator</title>
-    <link href="RandomPassword.css">
+    <link rel="stylesheet" href="RandomPassword.css">
 </head>
 <body>
-    <button class="button-el"></button>
-    <div class="random-el" onclick=""></div>
-    <div class="random1-el" onclick=""></div>
+    <div class="title-white">
+        <h1>Generate a</h1>
+    </div>
+    <div class="title-green">
+        <h1>random password</h1>
+    </div>
+    <h1>Never use an unsecure password again.</h1>
+    <button class="button-el" onclick="clickButton()">Generate Password</button>
+    <input type="number" id="psw-length" placeholder="set password length">
+    <div class="border"></div>
+    <div class="random-el"></div>
+    <div class="random1-el" ></div>
 
     <script src="RandomPassword.js"></script>
 </body>
