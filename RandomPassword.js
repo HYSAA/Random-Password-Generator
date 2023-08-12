@@ -29,6 +29,7 @@
 //   });
 let btn = document.getElementById("button-el");
 let random = document.getElementById("random-el");
+let random1=document.getElementById("random1-el")
 
 let password = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
@@ -47,7 +48,10 @@ function fight() {
 
 btn.addEventListener('click', function() {
     let result = fight();
+    let result1=fight();
     let joinedResult = result.slice(0, 2).concat(result[2].join("")).join(""); 
     // Join the first two fighters and the data array, then join everything together
     random.textContent = joinedResult;
+    let joinedResult1=result1.slice(0,2).concat(result1[2].join("")).join("");
+    random1.textContent=joinedResult1;
 });
