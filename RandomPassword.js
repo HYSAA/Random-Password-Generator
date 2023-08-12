@@ -3,7 +3,8 @@ let btn= document.getElementById("button-el")
 let random=document.getElementById("random-el")
 let random2=document.getElementById("random1-el")
 let test=document.getElementById("test-el")
-let result;
+let result="";
+let joinedResult=""
 let password=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
 "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
@@ -19,8 +20,6 @@ function fight(){
 console.log(data)
     return [fighters1,fighters2,data]
  }
-
-
 // btn.addEventListener('click',function(){
 //     let result=fight()//gi call niya ang function na fight()
 //     let random = document.getElementById("random-el")
@@ -34,11 +33,8 @@ console.log(data)
 // })
 btn.addEventListener('click', function() {
     let result = fight();
-    let random = document.getElementById("random-el");
-    let joinedResult = result.join("");
-    random.textContent = joinedResult;
+    // let random = document.getElementById("random-el");
+    // for(let i=0;i<result.length;i++)
+   let joinedResult = result.join("");
+    random.textContent = joinedResult; 
   });
-
-// let a=["a", "b", "c", "d"]
-// let text=a.join("")
-// console.log(text)
