@@ -31,7 +31,8 @@ let btn = document.getElementById("button-el");
 let random = document.getElementById("random-el");
 let random1=document.getElementById("random1-el")
 
-let password = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+let password = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "-", "+", "=","a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+];
 
 function fight() {
     let index1 = Math.floor(Math.random() * 26);
@@ -54,4 +55,15 @@ btn.addEventListener('click', function() {
     random.textContent = joinedResult;
     let joinedResult1=result1.slice(0,2).concat(result1[2].join("")).join("");
     random1.textContent=joinedResult1;
+  
 });
+// new ClipboardJS('#random-el', {
+//     text: function(trigger) {
+//       return trigger.textContent;
+//     }
+//   });
+new ClipboardJS('#copyText', {
+    text: function(trigger) {
+      return trigger.textContent;
+    }
+  });

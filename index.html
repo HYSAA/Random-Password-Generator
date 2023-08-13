@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="RandomPassword.css">
 </head>
 <body>
+    <script src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
     <div class="title-white">
         <h1>Generate a</h1>
+        <div class="title-green">
+            <h1>random password</h1>
     </div>
-    <div class="title-green">
-        <h1>random password</h1>
+    
     </div>
-    <h1>Never use an unsecured password again.</h1>
+    <h3>Never use an unsecured password again.</h3>
     <button id="button-el">Generate Password</button>
     <input type="number" id="psw-length" placeholder="set password length">
     <div class="border"></div>
     <div class="screens">
+    <div class="screen">
     <p id="random-el"></p>
+    </div>
+    <div class="screen1">
     <p id="random1-el" ></p>
-    <p id="test-el"></p>
      </div>
+    </div>
     <script src="RandomPassword.js"></script>
+  
 </body>
 </html>
